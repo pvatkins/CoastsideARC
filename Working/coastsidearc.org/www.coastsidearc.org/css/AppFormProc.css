@@ -1,0 +1,13 @@
+/* AppForm.css */
+
+  input{
+    width: 80%;
+    left: 100px;
+    padding: 3px 3px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: 2px solid red;
+  }
+
+
+/* End of AppForm.css */

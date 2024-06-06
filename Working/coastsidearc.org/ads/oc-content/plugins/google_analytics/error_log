@@ -1,0 +1,1 @@
+[11-May-2013 03:40:59] PHP Fatal error:  Call to undefined function  osc_add_hook() in /home2/coastsi3/public_html/ads/oc-content/plugins/google_analytics/index.php on line 43

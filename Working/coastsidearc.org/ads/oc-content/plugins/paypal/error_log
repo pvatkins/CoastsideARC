@@ -1,0 +1,1 @@
+[11-May-2013 03:41:07] PHP Fatal error:  Call to undefined function  osc_plugins_path() in /home2/coastsi3/public_html/ads/oc-content/plugins/paypal/index.php on line 16

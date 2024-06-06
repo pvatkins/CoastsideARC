@@ -1,0 +1,26 @@
+.body {
+  background-image: url("/images/zz_bg_20.gif");
+}
+
+.body.relative {
+  position: relative;
+  left: 45px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: separate;
+  empty-cells: hide;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 4px;
+}
+
+.c1, .c5 { text-align: center; width: 75px ;  }
+.c2, .c6 { text-align: center; width: 50px ;  }
+.c3, .c7 { text-align: left;   width: 180px;  }
+.c4      {                     width: 50px ;  }

@@ -1,0 +1,20 @@
+body {
+  left: 45px;
+}
+
+.UsageHeader {
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #800080;
+  margin: 8px;
+}
+
+.scriptex {
+  box-sizing: border-box;
+  padding: 4px;
+  font-family: Verdana, Arial, helvetica, sans-serif;
+  color: var(--main-text-color);
+  font-size: 14px;
+  /* border: 1px solid red; */
+}

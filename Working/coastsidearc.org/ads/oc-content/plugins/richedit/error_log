@@ -1,0 +1,1 @@
+[11-May-2013 03:41:09] PHP Fatal error:  Call to undefined function  osc_register_plugin() in /home2/coastsi3/public_html/ads/oc-content/plugins/richedit/index.php on line 115

@@ -1,0 +1,21 @@
+body {
+  left: 45px;
+}
+
+table, th, td
+{
+  /* border: 2px dotted red;
+  border-collapse: collapse; */
+  vertical-align: top;
+}
+
+.leftcol {
+  width: 210px;
+  padding: 20px;
+}
+
+.rightcol {
+  width: 590px;
+  padding: 20px;
+  font-size: 1.1em;
+}

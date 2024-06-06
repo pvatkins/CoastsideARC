@@ -1,0 +1,44 @@
+/* PrivacyPolicy.css */
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    width: 723px;
+    border: 1px dotted red; 
+    grid-template-columns: [H1]300px[H2]400px[H3];
+    grid-template-rows: [V1]auto[V2]auto[V3]auto[V4];
+}
+
+  .header, .footer, .menu, .details {
+    border: 1px dotted green;
+  }
+
+  .header {
+      grid-column: H1/H3;
+      grid-row: V1/V2;
+  } 
+
+  .menu {
+      grid-column: H1/H2;
+      grid-row: V2/V3;
+      text-align: left;
+      margin: 3px;
+  }
+
+  .details {
+      grid-column: H2/H3;
+      grid-row: V2/V3;
+  }
+
+  .footer {
+    grid-column: H1/H3;
+    grid-row: V3/V4;
+    text-align: center;
+  }
+
+  html {
+      font-family: sans-serif;
+  }
+
+  

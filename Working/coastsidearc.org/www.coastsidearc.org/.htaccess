@@ -1,0 +1,4 @@
+# Allow & Encourage SSI Includes
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml

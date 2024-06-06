@@ -1,0 +1,62 @@
+/* AppForm.css */
+
+
+  input.inputbox {
+    width: 90%;
+    /* left: 100px; */
+    padding: 2px 2px;
+    margin: 2px 2px;
+    box-sizing: border-box;
+    background-color: inherit;
+  }
+
+  table#formtable1 {
+    width: 550px;
+    background-color: inherit;
+  }
+
+  #tbody {
+    width: auto;
+  }
+
+  #arrlbox, #aresbox, #racesbox, #certbox {
+    align: left;
+  }
+
+  #testdiv1 {
+    background-color: pink;
+    height: 20px;
+    width: 100%;
+  }
+
+  #testdiv2 {
+    background-color:lightblue;
+    height: 20px;
+    width: 100%;
+  }
+
+
+  /*  https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html */
+  form  { display: table}
+  p     { display: table-row}
+  label { display: table-cell}
+  input { display: table-cell}
+
+
+  .leftcol {
+    width: 175px;
+    /* background-color: lightblue; */
+  }
+
+  .rightcol {
+    width: 575px;
+  }
+
+  #SubmitButton {
+    font-face: 'Comic Sans MS';
+    color: teal;
+    background-color: #FFFFC0;
+    border: 3pt ridge lightgrey;
+    font-size: 14px;
+    padding: 5px;
+  }

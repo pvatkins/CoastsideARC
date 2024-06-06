@@ -1,0 +1,91 @@
+/* AppFormPaymnentDB.css */
+  .input {
+    font-size: smaller;
+    color: var(--main-text-color);
+    text-align: right;
+  }
+
+  #gonow {
+    margin-left: 40%;
+    width:20%;
+    height:auto;
+    background-color: var(--paypal-gold-color);
+    -webkit-border-radius: 5px;
+    font-family: Tahoma;
+    padding: 2px 2px;
+    cursor: pointer;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+  }
+
+  #primary, #family, #subtotal, #checked, #optional, #paypal, #club, #total, 
+  #NowTime, #repeater, #digipeater, .checkbox, .yrcontainer
+  td > label {
+    text-align:right;
+    padding: 0;
+    margin: 0;
+    color: var(--main-text-color);
+  }
+
+  #checked, #repeater, #digipeater {
+    background-color: light-blue;
+  }
+
+  #formtable {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .leftcol,.ltestbox,.checkbox {
+    width: 201px;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+    font-size: 12px;
+  }
+
+  .rightcol,.rtestbox {
+    width: 522px;
+    background-color: rgb(255, 224, 250);
+    padding: 20px;
+    margin: 20px;
+    font-size: 12px;
+  }
+
+  .section-1 {grid-area: header; }
+  .section-2 {grid-area: mymenu; }
+  .section-3 {grid-area: main;   }
+  .section-5 {grid-area: press;  }
+  .section-4 {grid-area: footer; }
+
+
+  .grid-container {
+      display: grid;
+      grid-template-areas:
+          "  .      header header header   . "  
+          "mymenu   main   main   main   main"
+          "  .       .    press    .     .   "
+          "  .     footer footer footer   .  ";
+      gap: 2px;
+      background-color: inherit; /*#2196F3; */
+      padding: 2px;
+  }
+
+  .grid-template-columns {
+    column-width: 158px 158px 158px 158px 158px;
+  }
+
+  .grid-container > div {
+    display: grid;
+    background-color: inherit;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .tbody > tr > td > div {
+      text-align: left;
+  }
+
+ 
+

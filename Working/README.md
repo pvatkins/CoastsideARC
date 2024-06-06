@@ -1,0 +1,2 @@
+# CoastsideARC
+This is the repository for Coastside Amateur Radio Club. This repository was built by downloading the website to a directory 'C:\CoastsideARC\Working  on the local machine. Then, git imitialized the directory and added the files.

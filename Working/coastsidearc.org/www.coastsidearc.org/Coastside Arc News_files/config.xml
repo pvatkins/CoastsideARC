@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery>
+  <image imageURL="images/image1.jpeg"
+	thumbURL="thumbs/image1.jpeg"
+	linkURL="images/image1.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk_000\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\Coastside Arc News_files\image1.jpeg"
+
+>
+    <title><![CDATA[image1]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image2.jpeg"
+	thumbURL="thumbs/image2.jpeg"
+	linkURL="images/image2.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk_000\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\Coastside Arc News_files\image2.jpeg">
+    <title><![CDATA[image2]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

@@ -1,0 +1,9 @@
+table.rightcol{
+  border-collapse: separate;
+  border-spacing: 0 50px;
+}
+
+td.rightcol{
+  border: 5px solid red;
+  padding: 20px;
+}

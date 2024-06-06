@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	galleryTitle="Field Day 2014"
+
+>
+  <image imageURL="images/IMG_1127.jpg"
+	thumbURL="thumbs/IMG_1127.jpg"
+	linkURL="images/IMG_1127.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\juicebox\Field-Day-2014\IMG_1127.JPG">
+    <title><![CDATA[IMG_1127]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_1153.jpg"
+	thumbURL="thumbs/IMG_1153.jpg"
+	linkURL="images/IMG_1153.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\juicebox\Field-Day-2014\IMG_1153.JPG">
+    <title><![CDATA[IMG_1153]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_1154.jpg"
+	thumbURL="thumbs/IMG_1154.jpg"
+	linkURL="images/IMG_1154.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\juicebox\Field-Day-2014\IMG_1154.JPG">
+    <title><![CDATA[IMG_1154]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_1159.jpg"
+	thumbURL="thumbs/IMG_1159.jpg"
+	linkURL="images/IMG_1159.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\juicebox\Field-Day-2014\IMG_1159.JPG">
+    <title><![CDATA[IMG_1159]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_1160.jpg"
+	thumbURL="thumbs/IMG_1160.jpg"
+	linkURL="images/IMG_1160.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\juicebox\Field-Day-2014\IMG_1160.JPG">
+    <title><![CDATA[IMG_1160]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

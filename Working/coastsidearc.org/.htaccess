@@ -1,0 +1,15 @@
+#These rules specific to CoastsideARC
+
+#This rule ensures secure communication between client and server
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+<IfModule mod_headers.c>
+Header set Cache-Control "no-transform"
+</IfModule>
+
+#This rule permits server-side includes
+Options +Includes
+AddType text/html shtml
+AddHandler server-parsed shtml

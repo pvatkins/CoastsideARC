@@ -1,0 +1,126 @@
+:root {
+  --main-hover-color: #8000FF;
+  --main-link-color: #663399;
+  --main-table-caption-color: purple;
+  --main-text-color: darkblue;
+  --main-visited-color: #003333;
+  --paypal-gold-color: #FFC439;
+}
+.leftcol, .rightcol {
+  box-sizing: border-box;
+  padding: 4px;
+  font-family: Verdana, Arial, helvetica, sans-serif;
+  color: var(--main-text-color);
+  font-size: 14px;
+  /* border: 1px solid red; */
+}
+
+.leftcol,.ltestbox {
+  width: 201px;
+}
+
+.rightcol,.rtestbox {
+  width: 522px;
+}
+.ltestbox,.rtestbox {
+  height: 200px;
+}
+.ltestbox { background-color: lightyellow; }
+.rtestbox { background-color: lightcyan; }
+
+.header,.bottom {
+  box-sizing: border-box;
+  padding: 4px;
+  font-family: Arial, helvetica, sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.bottom {
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 10pt;
+  /* background-color: lightgreen; */
+}
+body {
+  background-image: url(/images/zz_bg_20.gif);
+  position: relative;
+  left: 45px;
+}
+
+a:link {
+  color: var(--main-link-color);
+}
+
+a:visited {
+  color: var(--main-visited-color)
+}
+
+a:hover {
+  color: var(--main-hover-color)
+}
+
+img {
+  border: 0;
+}
+
+hr {
+  border: 0;
+  background: gray;
+  height: 2px;
+  color: gray;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule table tr td caption {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: var(--main-table-caption-color);
+}
+
+.rost_grid {
+  /* border: 10 px solid purple; */
+  position: relative;
+  width: 820px;
+  /* box-sizing: border-box; */
+  left: 45px;
+  display: grid;
+  /* border: 1px solid red; */
+  padding: 0px;
+  grid-gap: 5px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'headarea'
+    'middarea'
+    'footarea';
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new_flash {
+  width: 30px;
+  height: 15px;
+  border: 0px;
+}
+
+.middle {
+  grid-area: middarea;
+  /* box-sizing: border-box; */
+  /* background: #F0FFF0; */
+  /* border: 5px solid green; */
+  /* border-radius: 20px; */
+  padding: 2px;
+  /* background-color: lightcyan; */
+  font-family: Arial;
+}

@@ -1,0 +1,81 @@
+body {
+  left: 45px;
+}
+
+.OfficerHeader {
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #800080;
+  margin: 8px;
+}
+
+#table1, #table1 th, #table1 td {
+  /* border: 2px solid red; */
+  /* border-collapse: collapse; */
+}
+
+#table2, #table2 th, #table2 td {
+  border: 2px solid black;
+}
+
+#table3, #table3 th, #table3 td {
+  border: 2px solid black;
+}
+
+#table2 {
+  border-collapse: collapse;
+  font-family: Verdana, Arial, Helvetica;
+}
+
+#table3 {
+  border-collapse: collapse;
+  font-family: Verdana, Arial, Helvetica;
+}
+
+#table2 caption,
+#table3 caption {
+  color: var(--main-table-caption-color);
+}
+
+.col1, .col2 { font-size: 0.95em; }
+
+
+th {
+  text-align: center;
+  font-size: 4;
+  font-weight: bold;
+  height: 30px;
+  color: var(--main-table-caption-color)
+}
+
+td {
+  text-indent: 10px;
+  font-size: 3;
+  font-weight: normal;
+  color: var(--main-text-color);
+}
+
+.subhead {
+  text-align: left;
+  text-indent: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+  height: 30px;
+}
+
+.mainhead {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  height: 40px;
+}
+.header {
+  margin-bottom: 15px;
+}
+.leftcol{
+  width: 200px;
+}
+.bottom {
+  margin: 20px;
+}

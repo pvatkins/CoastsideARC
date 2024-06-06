@@ -1,0 +1,142 @@
+.indent {
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+.indent1 {
+  margin-left: 50px;
+  margin-right: auto;
+  color:red;
+}
+
+/* For media with a width >= 768 px */
+body {
+  background-image: url(/images/zz_bg_20.gif);
+  position: relative;
+  left: 45px;
+}
+
+.tow003 {
+  height: 40px;
+  width: 40px;
+  border: 0px;
+}
+
+.leftcol, .rightcol {
+  box-sizing: border-box;
+  padding: 4px;
+  font-family: Verdana, Arial, helvetica, sans-serif;
+  color: "#9966CC";
+  font-size: 14px;
+  /* border: 1px solid red; */
+}
+.leftcol {
+  width: 201px;
+  /* background-color: lightblue; */
+}
+
+.rightcol {
+  width: 522px;
+  /* background-color: lightcyan; */
+}
+.header,.bottom {
+  box-sizing: border-box;
+  padding: 4px;
+  font-family: Arial, helvetica, sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.header {
+  /* background-color: yellow; */
+}
+
+.bottom {
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 10pt;
+  /* background-color: lightgreen; */
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .indent {
+    margin-left: 40px;
+  }
+  /* For media with a width >= 768 px */
+  body {
+    background-image: url(/images/zz_bg_10.gif);
+    left: 13px;
+  }
+
+  .tow003 {
+    height: 35px;
+    width: 35px;
+  }
+
+  .leftcol, .rightcol {
+    font-size: 12px;
+    /* border: 1px solid red; */
+  }
+  .leftcol {
+    width: 169px;
+    /* background-color: lightblue; */
+  }
+
+  .rightcol {
+    width: 418px;
+    /* background-color: lightcyan; */
+  }
+  .header {
+    /* background-color: yellow; */
+  }
+
+  .bottom {
+    font-size: 9px;
+    /* background-color: lightgreen; */
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  /* Design Point: 450px */
+  .indent {
+    margin-left: 30px;
+  }
+
+  .banner {
+    width: 81%;
+  }
+  /* For media with a width < 600 px */
+  body {
+    background-image: url(/images/zz_bg_00.gif);
+    left: 0px;
+  }
+
+  .tow003 {
+    height: 30px;
+    width: 30px;
+  }
+
+  .leftcol, .rightcol {
+    font-size: 10px;
+    /* border: 1px solid red; */
+  }
+  .leftcol {
+    width: 145px;
+    /* background-color: lightblue; */
+  }
+
+  .rightcol {
+    width: 335px;
+    /* background-color: lightcyan; */
+  }
+  .header {
+    /* background-color: yellow; */
+  }
+
+  .bottom {
+    font-size: 8px;
+    /* background-color: lightgreen; */
+  }
+}

@@ -1,0 +1,96 @@
+
+.leftcol, .rightcol {
+  box-sizing: border-box;
+  padding: 4px;
+  font-family: Verdana, Arial, helvetica, sans-serif;
+  color: "#9966CC";
+  font-size: 14px;
+  /* border: 1px solid red; */
+}
+.leftcol {
+  width: 201px;
+  /* background-color: lightblue; */
+}
+
+.rightcol {
+  width: 522px;
+  /* background-color: lightcyan; */
+}
+.header,.bottom {
+  box-sizing: border-box;
+  padding: 4px;
+  font-family: Arial, helvetica, sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.header {
+  /* background-color: yellow; */
+}
+
+.bottom {
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 10pt;
+  /* background-color: lightgreen; */
+}
+
+body {
+    background-image: url("/images/zz_bg_20.gif");
+    position: relative;
+    left: 45px;
+  }
+
+  .leftbox {
+    width: 246px;
+    /* background-color: lightyellow; */
+    grid-area: leftarea;
+    box-sizing: border-box;
+    line-height: 1.3em;
+    display: block;
+    padding: 2px;
+    font-family: Arial;
+    font-size: 110%;
+  }
+
+  #prestab td, #prestab th, #prestab {
+    padding: 5px;
+  }
+
+  .pres {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+  }
+  .pres thead tr {
+    background-color: #0055cc;
+    color: #ffffff;
+    text-align: left;
+  }
+  .pres th, .pres td {
+    padding: 12px 15px;
+  }
+  .pres tbody tr {
+    border-bottom: 1px splid #dddddd;
+  }
+  .pres tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  .pres tbody tr: last-of-type{
+    border-bottom: 2px solid #0055cc;
+  }
+  
+  .header {
+    /* width: "815px"; */
+    grid-area: myheader;
+    /* border: 1px solid red; */
+  }
+
+  .bottom {
+    font-size: 75%;
+  }

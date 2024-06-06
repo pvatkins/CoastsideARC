@@ -1,0 +1,14 @@
+/* AppFormPayment.css */
+#paypal-button-container {
+    margin-top: 0.25in;
+    margin-bottom: 0.25in;
+    margin-left: 36%;
+    margin-right: 36%;
+    padding: 2%;
+    text-align: "center"
+}
+
+#smart-button-container {
+    text-align: "center";
+}
+

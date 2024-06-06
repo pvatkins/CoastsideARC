@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	galleryTitle="Election Dinner - 2017"
+	useFullscreenExpand="false"
+
+>
+  <image imageURL="images/IMG_4989.jpg"
+	thumbURL="thumbs/IMG_4989.jpg"
+	linkURL="images/IMG_4989.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\albums\Election-Dinner-2017\IMG_4989.JPG">
+    <title><![CDATA[IMG_4989]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/aj6j-1.jpg"
+	thumbURL="thumbs/aj6j-1.jpg"
+	linkURL="images/aj6j-1.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\albums\Election-Dinner-2017\aj6j-1.jpg">
+    <title><![CDATA[aj6j-1]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/aj6j-2.jpg"
+	thumbURL="thumbs/aj6j-2.jpg"
+	linkURL="images/aj6j-2.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\albums\Election-Dinner-2017\aj6j-2.jpg">
+    <title><![CDATA[aj6j-2]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/aj6j-3.jpg"
+	thumbURL="thumbs/aj6j-3.jpg"
+	linkURL="images/aj6j-3.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\albums\Election-Dinner-2017\aj6j-3.jpg">
+    <title><![CDATA[aj6j-3]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/aj6j-4.jpg"
+	thumbURL="thumbs/aj6j-4.jpg"
+	linkURL="images/aj6j-4.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\albums\Election-Dinner-2017\aj6j-4.jpg">
+    <title><![CDATA[aj6j-4]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_4988.jpg"
+	thumbURL="thumbs/IMG_4988.jpg"
+	linkURL="images/IMG_4988.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\pvatk\OneDrive\Documents\2019 Coastside ARC\02 Proposed Website\www.coastsidearc.org\gallery\var\albums\Election-Dinner-2017\IMG_4988.JPG">
+    <title><![CDATA[IMG_4988]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

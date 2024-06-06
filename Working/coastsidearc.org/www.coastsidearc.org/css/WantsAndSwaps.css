@@ -1,0 +1,31 @@
+body {
+  left: 45px;
+  /*border: 5px solid purple;*/
+  width: 820px;
+}
+
+
+#garagesale {
+  color: red;
+  font-size:1.5em;
+  font-weight:bold;
+  font-style: italic;
+}
+
+table, th, td
+{
+  /* border: 2px dotted red;
+  border-collapse: collapse; */
+  vertical-align: top;
+}
+
+.leftcol {
+  width: 210px;
+  padding: 20px;
+}
+
+.rightcol {
+  width: 590px;
+  padding: 20px;
+  font-size: 1.1em;
+}

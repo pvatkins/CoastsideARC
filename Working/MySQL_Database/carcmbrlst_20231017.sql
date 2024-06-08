@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: noorda.pdx1-mysql-a7-1a.dreamhost.com
--- Generation Time: May 09, 2024 at 08:08 AM
+-- Generation Time: Jun 07, 2024 at 03:47 PM
 -- Server version: 8.0.28-0ubuntu0.20.04.3
 -- PHP Version: 8.1.2-1ubuntu2.17
 
@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Database: `carcmbrlst_20231017`
 --
+DROP DATABASE `carcmbrlst_20231017`;
+CREATE DATABASE IF NOT EXISTS `carcmbrlst_20231017` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `carcmbrlst_20231017`;
 
 -- --------------------------------------------------------
 
@@ -150,41 +153,41 @@ INSERT INTO `CARCMBRLST_202310177` (`ID`, `CallSign`, `LicenseClass`, `CARCOffic
 
 CREATE TABLE `carctb` (
   `ID` int NOT NULL,
-  `CallSign` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `LicenseClass` varchar(8) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `CARCOfficer` varchar(21) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `CallSign` varchar(10) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `LicenseClass` varchar(8) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `CARCOfficer` varchar(21) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
   `FullName` varchar(50) DEFAULT NULL,
-  `FirstName` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `LastName` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `Address` varchar(22) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `Apt_Suite` varchar(7) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `City` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `State` varchar(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `FirstName` varchar(10) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `LastName` varchar(15) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `Address` varchar(22) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `Apt_Suite` varchar(7) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `City` varchar(15) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `State` varchar(2) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
   `ZIP` int DEFAULT NULL,
-  `HomePhone` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `CellPhone` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `CellTxt` varchar(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `Email1` varchar(31) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `Email2` varchar(23) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `CARCMember` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `Active` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `Inactive` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `DuesDue` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `DuesPaid` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `HomePhone` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `CellPhone` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `CellTxt` varchar(4) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `Email1` varchar(31) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `Email2` varchar(23) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `CARCMember` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `Active` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `Inactive` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `DuesDue` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `DuesPaid` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
   `DatePaid` datetime DEFAULT NULL,
   `LastPaid` datetime DEFAULT NULL,
   `NextDue` datetime DEFAULT NULL,
   `AmountPaid` int DEFAULT NULL,
-  `YrsLicensed` varchar(3) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `YrsLicensed` varchar(3) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
   `MemberSince` int DEFAULT NULL,
-  `DonateTo` varchar(8) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `DonateTo` varchar(8) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
   `DonationAmt` int DEFAULT NULL,
-  `ARRL` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `ARES` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `RACES` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `CERT` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `Packet` varchar(7) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `ARRL` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `ARES` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `RACES` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `CERT` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `Packet` varchar(7) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=uca1400_as_ci;
 
 --
 -- Dumping data for table `carctb`
@@ -370,9 +373,9 @@ INSERT INTO `Emails` (`Callsign`, `Email`, `FullName`) VALUES
 --
 
 CREATE TABLE `in_vuppl_not_carctb` (
-  `member_fullName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `member_firstName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `member_lastName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
+  `member_fullName` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `member_firstName` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `member_lastName` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -398,14 +401,14 @@ INSERT INTO `in_vuppl_not_carctb` (`member_fullName`, `member_firstName`, `membe
 
 CREATE TABLE `merged` (
   `ID` int NOT NULL,
-  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `FirstName` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `LastName` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `FirstName` varchar(10) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `LastName` varchar(15) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
   `Membership` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `Callsign` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `CARCMember` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `as_of_date` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `dues_cy` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Callsign` varchar(10) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `CARCMember` varchar(5) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `as_of_date` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `dues_cy` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
   `DatePaid` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -495,22 +498,22 @@ INSERT INTO `merged` (`ID`, `FullName`, `FirstName`, `LastName`, `Membership`, `
 
 CREATE TABLE `pay12` (
   `myindex` int NOT NULL,
-  `mydate` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `years` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `callsigns` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `primary` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `family` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `repeater` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `digipeater` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `subtotal` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `paypalfee` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `clubreceives` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `total` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `pay_paypal` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `new` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `mydate` varchar(30) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `years` varchar(30) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `callsigns` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `primary` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `family` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `repeater` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `digipeater` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `subtotal` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `paypalfee` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `clubreceives` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `total` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `pay_paypal` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `new` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
   `transaction_status` varchar(12) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Record of Payments';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=uca1400_as_ci COMMENT='Record of Payments';
 
 --
 -- Dumping data for table `pay12`
@@ -574,7 +577,10 @@ INSERT INTO `pay12` (`myindex`, `mydate`, `years`, `callsigns`, `primary`, `fami
 (129, '2024-04-18 04:37:41', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL),
 (130, '2024-04-26 04:01:12', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL),
 (131, '2024-05-01 08:54:18', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL),
-(132, '2024-05-02 20:51:21', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL);
+(132, '2024-05-02 20:51:21', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL),
+(133, '2024-05-11 02:44:35', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL),
+(134, '2024-05-25 05:34:55', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL),
+(135, '2024-05-26 21:57:14', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -583,23 +589,23 @@ INSERT INTO `pay12` (`myindex`, `mydate`, `years`, `callsigns`, `primary`, `fami
 --
 
 CREATE TABLE `payments` (
-  `pp_id` varchar(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `pp_id` varchar(36) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
   `seq` int DEFAULT NULL,
-  `mydate` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `years` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `callsigns` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `primary` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `family` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `repeater` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `digipeater` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `subtotal` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `paypalfee` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `clubreceives` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `total` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `pay_paypal` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `new` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `transaction_status` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
+  `mydate` varchar(30) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `years` varchar(30) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `callsigns` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `primary` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `family` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `repeater` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `digipeater` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `subtotal` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `paypalfee` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `clubreceives` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `total` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `pay_paypal` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `new` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `transaction_status` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -627,23 +633,23 @@ INSERT INTO `payments` (`pp_id`, `seq`, `mydate`, `years`, `callsigns`, `primary
 --
 
 CREATE TABLE `payments1` (
-  `pp_id` varchar(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `pp_id` varchar(36) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
   `seq` int NOT NULL,
-  `mydate` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `years` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `callsigns` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `primary` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `family` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `repeater` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `digipeater` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `subtotal` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `paypalfee` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `clubreceives` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `total` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `pay_paypal` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `new` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `transaction_status` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
+  `mydate` varchar(30) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `years` varchar(30) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `callsigns` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `primary` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `family` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `repeater` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `digipeater` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `subtotal` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `paypalfee` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `clubreceives` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `total` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `pay_paypal` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `new` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `transaction_status` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -654,26 +660,26 @@ CREATE TABLE `payments1` (
 
 CREATE TABLE `pp_tnx` (
   `myindex` int NOT NULL,
-  `mydate` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `years` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `callsigns` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `primary` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `family` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `repeater` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `digipeater` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `subtotal` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `paypalfee` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `clubreceives` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `total` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `pay_paypal` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `new` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `transaction_status` set('pending','posted','cancelled') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `pp_id` varchar(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `mydate` varchar(30) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `years` varchar(30) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `callsigns` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `primary` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `family` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `repeater` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `digipeater` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `subtotal` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `paypalfee` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `clubreceives` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `total` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
+  `FullName` varchar(50) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `pay_paypal` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `new` varchar(12) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `transaction_status` set('pending','posted','cancelled') CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
+  `pp_id` varchar(36) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci NOT NULL,
   `pp_total` float NOT NULL,
-  `pp_orderID` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `pp_orderID` varchar(30) CHARACTER SET utf8mb4 COLLATE uca1400_as_ci DEFAULT NULL,
   `pp_response` json DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Record of Payments - SJF version';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=uca1400_as_ci COMMENT='Record of Payments - SJF version';
 
 --
 -- Dumping data for table `pp_tnx`
@@ -741,7 +747,16 @@ INSERT INTO `pp_tnx` (`myindex`, `mydate`, `years`, `callsigns`, `primary`, `fam
 (443, '2024-05-04 11:26:43', '', 'AI6BB', '$   0.00', '$   0.00', '$   4.00', '$   0.00', '$   4.00', '$   0.65', '$   4.00', '$   4.65', 'Paul Atkins', 'yes', 'no', 'pending', 'fd45efe9-cfa4-4c74-bfeb-dd474cff300c', 4.65, NULL, NULL),
 (444, '2024-05-04 11:49:32', '', 'AI6BB', '$   0.00', '$   0.00', '$   3.45', '$   0.00', '$   3.45', '$   0.63', '$   3.45', '$   4.08', 'Paul Atkins', 'yes', 'no', 'pending', 'bd2fab4e-a0de-4876-aa0f-19a6e3e0d0f0', 4.08, NULL, NULL),
 (445, '2024-05-04 23:41:38', '2025', '', '$  20.00', '$   0.00', '$   0.00', '$   0.00', '$  20.00', '$   1.19', '$  18.81', '$  20.00', 'U N D E F I N E D', 'no', 'no', 'pending', '40ba3071-c53d-452e-a874-614d8d98aed8', 20, NULL, NULL),
-(446, '2024-05-05 00:05:12', '2025', '', '$  20.00', '$   0.00', '$   0.00', '$   0.00', '$  20.00', '$   1.19', '$  18.81', '$  20.00', 'U N D E F I N E D', 'no', 'no', 'pending', 'fde1bfcf-966b-41bd-9805-84deb735b63c', 20, NULL, NULL);
+(446, '2024-05-05 00:05:12', '2025', '', '$  20.00', '$   0.00', '$   0.00', '$   0.00', '$  20.00', '$   1.19', '$  18.81', '$  20.00', 'U N D E F I N E D', 'no', 'no', 'pending', 'fde1bfcf-966b-41bd-9805-84deb735b63c', 20, NULL, NULL),
+(447, '2024-05-11 22:11:55', '', 'N6SJF', '$   0.00', '$   0.00', '$   0.00', '$   5.00', '$   5.00', '$   0.69', '$   5.00', '$   5.69', 'Jonathan Lancelle', 'yes', 'no', 'cancelled', 'fadb3e99-7a89-4d3e-94c2-512827d85d27', 5.69, '59J186331S726853N', '{\"orderID\": \"59J186331S726853N\", \"purchase_units\": [{\"payments\": {\"captures\": [{\"id\": \"86C44822FP023770E\", \"links\": [{\"rel\": \"self\", \"href\": \"https://api.paypal.com/v2/payments/captures/86C44822FP023770E\", \"method\": \"GET\"}, {\"rel\": \"refund\", \"href\": \"https://api.paypal.com/v2/payments/captures/86C44822FP023770E/refund\", \"method\": \"POST\"}, {\"rel\": \"up\", \"href\": \"https://api.paypal.com/v2/checkout/orders/59J186331S726853N\", \"method\": \"GET\"}], \"amount\": {\"value\": \"5.69\", \"currency_code\": \"USD\"}, \"status\": \"COMPLETED\", \"custom_id\": \"fadb3e99-7a89-4d3e-94c2-512827d85d27\", \"create_time\": \"2024-05-12T05:12:22Z\", \"update_time\": \"2024-05-12T05:12:22Z\", \"final_capture\": true, \"seller_protection\": {\"status\": \"ELIGIBLE\", \"dispute_categories\": [\"ITEM_NOT_RECEIVED\", \"UNAUTHORIZED_TRANSACTION\"]}, \"seller_receivable_breakdown\": {\"net_amount\": {\"value\": \"5.00\", \"currency_code\": \"USD\"}, \"paypal_fee\": {\"value\": \"0.69\", \"currency_code\": \"USD\"}, \"gross_amount\": {\"value\": \"5.69\", \"currency_code\": \"USD\"}}}]}, \"shipping\": {\"name\": {\"full_name\": \"Jon Lancelle\"}, \"address\": {\"postal_code\": \"94044\", \"admin_area_1\": \"CA\", \"admin_area_2\": \"Pacifica\", \"country_code\": \"US\", \"address_line_1\": \"224 Modoc Place\"}}, \"reference_id\": \"default\"}]}'),
+(448, '2024-05-11 22:35:11', '2024', '', '$  20.00', '$   0.00', '$   5.00', '$   0.00', '$  25.00', '$   1.36', '$  23.64', '$  25.00', 'U N D E F I N E D', 'no', 'no', 'cancelled', '5331da46-71e2-4c69-9414-0662e0939b93', 25, NULL, NULL),
+(449, '2024-05-11 22:37:29', '', '', '$   0.00', '$   0.00', '$   5.00', '$   0.00', '$   5.00', '$   0.66', '$   4.34', '$   5.00', 'U N D E F I N E D', 'no', 'no', 'cancelled', 'cec48333-b007-400d-9486-f76ac16172f8', 5, NULL, NULL),
+(450, '2024-05-11 22:39:24', '', 'N6SJF-TEST', '$   0.00', '$   0.00', '$   5.00', '$   0.00', '$   5.00', '$   0.66', '$   4.34', '$   5.00', 'U N D E F I N E D', 'no', 'no', 'cancelled', '933dca12-fe87-448d-b102-39b5e23bb2f0', 5, NULL, NULL),
+(451, '2024-05-13 11:17:54', '', 'AI6BB', '$   0.00', '$   0.00', '$   5.00', '$   0.00', '$   5.00', '$   0.69', '$   5.00', '$   5.69', 'Paul Atkins', 'yes', 'no', 'posted', '49422ca7-feca-4a65-afbc-ae663f4690c1', 5.69, '7B298955VA921601U', '{\"orderID\": \"7B298955VA921601U\", \"purchase_units\": [{\"payments\": {\"captures\": [{\"id\": \"8X264606C3007162M\", \"links\": [{\"rel\": \"self\", \"href\": \"https://api.paypal.com/v2/payments/captures/8X264606C3007162M\", \"method\": \"GET\"}, {\"rel\": \"refund\", \"href\": \"https://api.paypal.com/v2/payments/captures/8X264606C3007162M/refund\", \"method\": \"POST\"}, {\"rel\": \"up\", \"href\": \"https://api.paypal.com/v2/checkout/orders/7B298955VA921601U\", \"method\": \"GET\"}], \"amount\": {\"value\": \"5.69\", \"currency_code\": \"USD\"}, \"status\": \"COMPLETED\", \"custom_id\": \"49422ca7-feca-4a65-afbc-ae663f4690c1\", \"create_time\": \"2024-05-13T18:23:45Z\", \"update_time\": \"2024-05-13T18:23:45Z\", \"final_capture\": true, \"seller_protection\": {\"status\": \"ELIGIBLE\", \"dispute_categories\": [\"ITEM_NOT_RECEIVED\", \"UNAUTHORIZED_TRANSACTION\"]}, \"seller_receivable_breakdown\": {\"net_amount\": {\"value\": \"5.03\", \"currency_code\": \"USD\"}, \"paypal_fee\": {\"value\": \"0.66\", \"currency_code\": \"USD\"}, \"gross_amount\": {\"value\": \"5.69\", \"currency_code\": \"USD\"}}}]}, \"shipping\": {\"name\": {\"full_name\": \"PAUL Atkins\"}, \"address\": {\"postal_code\": \"94044\", \"admin_area_1\": \"CA\", \"admin_area_2\": \"Pacifica\", \"country_code\": \"US\", \"address_line_1\": \"637 Sharp Park Road\"}}, \"reference_id\": \"default\"}]}'),
+(452, '2024-05-21 12:18:50', '', 'N6SJF_TEST', '$   0.00', '$   0.00', '$   5.00', '$   0.00', '$   5.00', '$   0.66', '$   4.34', '$   5.00', 'U N D E F I N E D', 'no', 'no', 'cancelled', '548884ac-12dc-43e0-b2be-61733842a32c', 5, NULL, NULL),
+(453, '2024-05-27 08:52:15', '', 'AI6BB', '$   0.00', '$   0.00', '$   5.00', '$   0.00', '$   5.00', '$   0.69', '$   5.00', '$   5.69', 'Paul Atkins', 'yes', 'no', 'posted', 'e70c1ebd-f4c1-4bd2-bc37-a3bd3130e5ee', 5.69, '23N531724Y9316715', '{\"orderID\": \"23N531724Y9316715\", \"purchase_units\": [{\"payments\": {\"captures\": [{\"id\": \"1BM023123U661572J\", \"links\": [{\"rel\": \"self\", \"href\": \"https://api.paypal.com/v2/payments/captures/1BM023123U661572J\", \"method\": \"GET\"}, {\"rel\": \"refund\", \"href\": \"https://api.paypal.com/v2/payments/captures/1BM023123U661572J/refund\", \"method\": \"POST\"}, {\"rel\": \"up\", \"href\": \"https://api.paypal.com/v2/checkout/orders/23N531724Y9316715\", \"method\": \"GET\"}], \"amount\": {\"value\": \"5.69\", \"currency_code\": \"USD\"}, \"status\": \"COMPLETED\", \"custom_id\": \"e70c1ebd-f4c1-4bd2-bc37-a3bd3130e5ee\", \"create_time\": \"2024-05-27T15:53:59Z\", \"update_time\": \"2024-05-27T15:53:59Z\", \"final_capture\": true, \"seller_protection\": {\"status\": \"ELIGIBLE\", \"dispute_categories\": [\"ITEM_NOT_RECEIVED\", \"UNAUTHORIZED_TRANSACTION\"]}, \"seller_receivable_breakdown\": {\"net_amount\": {\"value\": \"5.03\", \"currency_code\": \"USD\"}, \"paypal_fee\": {\"value\": \"0.66\", \"currency_code\": \"USD\"}, \"gross_amount\": {\"value\": \"5.69\", \"currency_code\": \"USD\"}}}]}, \"shipping\": {\"name\": {\"full_name\": \"PAUL Atkins\"}, \"address\": {\"postal_code\": \"94044\", \"admin_area_1\": \"CA\", \"admin_area_2\": \"Pacifica\", \"country_code\": \"US\", \"address_line_1\": \"637 Sharp Park Road\"}}, \"reference_id\": \"default\"}]}'),
+(454, '2024-05-29 12:13:08', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, '3f3fd11e-e6ec-4dc1-b5d3-cc4d961175b4', 0, NULL, NULL),
+(455, '2024-05-30 12:07:51', '', 'AI6BB', '$   0.00', '$   0.00', '$   0.00', '$   0.00', '$   0.00', '$   0.49', '$  -0.49', '$   0.00', 'Paul Atkins', 'no', 'no', 'cancelled', '31ee1949-35c4-4aab-97e1-8345cc10aa68', 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -796,7 +811,7 @@ CREATE TABLE `vuppl` (
   `address_state` varchar(50) DEFAULT NULL,
   `address_zip` varchar(50) DEFAULT NULL,
   `address_home_telephone` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=uca1400_as_ci;
 
 --
 -- Dumping data for table `vuppl`
@@ -1051,7 +1066,7 @@ ALTER TABLE `pp_tnx`
 -- AUTO_INCREMENT for table `pay12`
 --
 ALTER TABLE `pay12`
-  MODIFY `myindex` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
+  MODIFY `myindex` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
 
 --
 -- AUTO_INCREMENT for table `payments1`
@@ -1063,7 +1078,7 @@ ALTER TABLE `payments1`
 -- AUTO_INCREMENT for table `pp_tnx`
 --
 ALTER TABLE `pp_tnx`
-  MODIFY `myindex` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=447;
+  MODIFY `myindex` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=456;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

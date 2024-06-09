@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `carcmbrlst_20231017`
 --
-DROP DATABASE `carcmbrlst_20231017`;
+DROP DATABASE IF EXISTS `carcmbrlst_20231017`;
 CREATE DATABASE IF NOT EXISTS `carcmbrlst_20231017` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `carcmbrlst_20231017`;
 
